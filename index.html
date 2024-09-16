@@ -4,9 +4,9 @@
 <script src="aframe-ar.js"></script>
 
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
-	<a href="https://github.com/AR-js-org/AR.js/" target="_blank">AR.js</a> - example for a-frame
+	<!-- <a href="https://github.com/AR-js-org/AR.js/" target="_blank">AR.js</a> - example for a-frame -->
 	<br/>
-	Contact me any time at <a href='https://twitter.com/nicolocarp' target='_blank'>@nicolocarp</a>
+	<!-- Contact me any time at <a href='https://twitter.com/nicolocarp' target='_blank'>@nicolocarp</a> -->
 </div>
 	<a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' renderer='precision: medium;'>
 		handle pattern marker
@@ -15,19 +15,19 @@
 		</a-marker>
 
 		<a-marker type='pattern' url='markers/pattern-mars.patt' smooth='true'>
-			<a-box depth="3" height="3" width="3" position='0 2 0' material='opacity: 0.5; side:double; color:red;'></a-box>
+			<a-box depth="1" height="1" width="1" position='0 1 0' material='opacity: 0.5; side:double; color:red;'></a-box>
 		</a-marker>
 
 		<a-marker type='pattern' url='markers/pattern-meteor.patt' smooth='true'>
-			<a-box depth="3" height="3" width="3" position='0 2 0' material='opacity: 0.5; side:double; color:brown;'></a-box>
+			<a-box depth="1" height="1" width="1" position='0 1.5 0' material='opacity: 0.5; side:double; color:green;'></a-box>
 		</a-marker>
 
 		<a-marker type='pattern' url='markers/pattern-ship.patt' smooth='true'>
-			<a-box depth="3" height="3" width="3" position='0 2 0' material='opacity: 0.5; side:double; color:orange;'></a-box>
+			<a-box depth="1" height="1" width="1" position='0 1 0' material='opacity: 0.5; side:double; color:yellow;'></a-box>
 		</a-marker>
 
 		<a-marker type='pattern' url='markers/pattern-rocket.patt' smooth='true'>
-			<a-box depth="3" height="3" width="3" position='0 2 0' material='opacity: 0.5; side:double; color:brown;'></a-box>
+			<a-box depth="1" height="1" width="1" position='0 1 0' material='opacity: 0.5; side:double; color:white;'></a-box>
 		</a-marker>
 
 		<!-- handle hiro marker -->
