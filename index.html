@@ -19,6 +19,7 @@
 
 		<a-assets>
 			<a-asset-item id="hubble" src="models/hubble_light.glb"></a-asset-item>
+			<a-asset-item id="starliner" src="models/starliner.glb"></a-asset-item>
 			<a-cubemap id="reflection">
 				<img src="cubemap/px.jpg">
 				<img src="cubemap/nx.jpg">
@@ -42,10 +43,10 @@
 			<a-entity scale="0.5 0.5 0.5" position='0 0.5 0' gltf-model="#hubble" material="envMap:#reflection;"></a-entity>></a-entity>
 			<!-- <a-box depth="1" height="1" width="1" position='0 0.5 0' material='opacity: 0.5; side:double; color:blue;'></a-box> -->
 		</a-marker>
-
+		
 		<a-marker type='pattern' url='markers/pattern-starliner.patt' smooth='true'>
-			<a-box depth="1" height="1" width="1" position='0 1 0'
-				material='opacity: 0.5; side:double; color:red;'></a-box>
+			<a-entity scale="0.5 0.5 0.5" position='0 0.5 0' gltf-model="#starliner" ></a-entity>></a-entity>
+			<!-- <a-box depth="1" height="1" width="1" position='0 1 0' material='opacity: 0.5; side:double; color:red;'></a-box> -->
 		</a-marker>
 <!-- 
 		<a-marker type='pattern' url='markers/pattern-meteor.patt' smooth='true'>
